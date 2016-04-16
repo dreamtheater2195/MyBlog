@@ -10,14 +10,23 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="index.html" class="name">Kwan Deag</a>
+		<%= link_to "Kwan Deag", root_path, class: 'name' %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="#">Projects</a>
 			<a href="contact.html">Contact</a>
 		</nav>
 	</header>
-<%= yield %>
 
+	<%= yield %>
+
+	<footer id="main_footer">
+		<p class="copyright">&copy; 2016 Quan Minh Pham</p>
+		<nav>
+			<a href="https://www.facebook.com/quan162195" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://github.com/dreamtheater2195" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="https://steamcommunity.com/id/dreamtheater162195" target="_blank"><i class="fa fa-steam" aria-hidden="true"></i></a>
+		</nav>
+	</footer>
 </body>
 </html>
