@@ -32,6 +32,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#pygments.rb exposes the pygments syntax highlighter to Ruby
+gem 'pygments.rb', '~> 0.6.3'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

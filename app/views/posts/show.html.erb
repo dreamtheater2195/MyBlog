@@ -6,7 +6,7 @@
 	</header>
 
 	<div id="content">
-		<%= @post.content %>
+		<%= markdown @post.content %>
 	</div>
 	
 	<hr> 
@@ -18,3 +18,5 @@
 		<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 	</div>
 </div>
+
+<%= link_to "Edit", edit_post_path(@post) %>
