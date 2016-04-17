@@ -17,11 +17,9 @@
 	<div class="col-3 homepage_content">
 		<h2>Stuff I've built</h2>
 		<hr>
-		<h3><a href="#">The DO list</a></h3>
-		<div class="date">Friday April 10th</div>
-		<h3><a href="#">The DO list</a></h3>
-		<div class="date">Friday April 10th</div>
-		<h3><a href="#">The DO list</a></h3>
-		<div class="date">Friday April 10th</div>
+		<% @projects.each do |project| %>
+			<h3><a href="#"><%= link_to project.title, project %></a></h3>
+			<div class="date"><%= project.created_at.strftime("%A, %b %d") %></div>
+		<% end %>
 	</div>
 </div>
