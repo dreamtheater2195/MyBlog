@@ -37,6 +37,10 @@ body {
 	clear:both;
 }
 
+.hidden {
+	display: none;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
 	color: $dark;
 }
@@ -176,6 +180,7 @@ input[type="submit"], .button {
 	margin: 4em 0 0 0;
 	text-align: center;
 }
+
 @import 'welcome';
 @import 'post_project';
 @import 'pygments';
