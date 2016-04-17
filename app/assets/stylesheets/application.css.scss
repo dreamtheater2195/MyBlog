@@ -41,6 +41,12 @@ body {
 	display: none;
 }
 
+.notice, .alert {
+	text-align: center;
+	border-bottom: 1px solid $border;
+	padding: 1em 0;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
 	color: $dark;
 }
@@ -126,10 +132,12 @@ hr {
 	.copyright {
 		float:left;
 		font-size: .9em;
-		margin: 0;
+		margin: -0.8em 0 0 0;
+
 	}
 	nav {
 		float:right;
+		margin: -0.8em 0 0 0;
 		i {
 			color: $dark;
 			margin-left: 1em;
