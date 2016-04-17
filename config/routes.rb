@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :posts
   resources :projects
   resources :contacts, only: [:new,:create]
+
+  get '*path' => redirect('/')
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
