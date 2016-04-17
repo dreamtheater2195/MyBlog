@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #pygments.rb exposes the pygments syntax highlighter to Ruby
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'friendly_id', '~> 5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
